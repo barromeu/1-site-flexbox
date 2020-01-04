@@ -1,2 +1,2 @@
 # 1-site-flexbox
-primeiro site usando html flexbox e css
+Primeiro site usando html5, css3 e flexbox 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Contato</title>
+	<meta name="viewport" content="widht=device-width, initial-scale=1.0, shrink-to-fit-no">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300i,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/contato.css">
+</head>
+<body><div id="container">
+	<header id="topo">
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#">PRODUTOS</a></li>
+				<li><a href="#">NOTICIAS</a></li>
+				<li><a href="#">SOBRE</a></li>
+				<li><a href="contato.html">CONTATO</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="formulario">
+		<form action="" id="Form-contato">
+			<fieldset id="usuario"><legend>DADOS DO USUÁRIO</legend>
+				<p><label for="cNome">NOME:<input type="text" id="cNome" placeholder="Digite o seu Nome" maxlength="25" size="20"></label></p>
+				<p><label for="cEndereco">LOGRADOURO:<input type="text" id="cEndereco" name="tEndereco" placeholder="AV, RUA, TRAVESSA "></label></p>
+				<p><label for="cNum">NÚMERO:<input name="tNum" type="number" id="cNum" max="99999" min="1"></label></p>
+				<p><label for="cComp">COMPLEMENTO:<input name="tNum" type="text" id="cComp" placeholder="CASA, APTº" ></label></p>
+				<p><label for="cBairro">BAIRRO:<input type="text" id="cBairro" name="tBairro" placeholder="JARDIN, VILA"></label></p>
+				<p><label for="cCidade">CIDADE:<input type="text" id="cCidade" name="tCidade"></label></p>
+				<p><label for="cUf">ESTADO:<input type="text" id="cUf" name="tUf"></label></p>
+				<p><label for="cCep">CEP:<input type="text" id="cCep" name="tCep" maxlength="8" size="8"></label></p>
+				<!-- ** SEXO DO USUÁRIO ** -->
+				<fieldset><legend>SEXO:</legend>
+					<p><label for="cMasc"><input type="radio" id="cMasc" name="tSexo">MACULINOS</label></p>
+					<p><label for="cFem"><input type="radio" id="cFem" name="tSexo">FEMENINO</label></p>
+					<!-- ** DATA DE NASCIMENTO ** -->
+					<fieldset><legend>DATA DE NASCIMENTO</legend>
+					<p><label for="cData"> DATA DE NASCIMENTO:</label>	<input type="date" name="tData" id="cData"></<p>
+					</fieldset>
+				</fieldset>
+
+				<!-- *** DADOS DE ACESSO *** -->
+			<fieldset><legend> DAOD DE ACESSO</legend>
+				<p><label for="cLogin">USUÁRIO:<input type="text" name="tLogin" id="cLogin"></label></p>
+				<p><label for="cSenha">SENHA:<input type="password" name="tSenha" id="cSenha"></label></p>
+				<p><label for="cEmail">E-MAIL:<input type="email" id="cEmail" name="tEmail"></label></p>
+			</fieldset>
+
+			<!-- *** MENSAGEM *** -->
+			<fieldset><legend>MENSAGEM DO USUÁRIO</legend>
+				<p><label for="cMsg"><input type="textarea" name="tMsg" id="cMsg" col="5" row="20" placeholder="Digite a sua Mensagem"></label></p>
+			</fieldset>
+			
+			<button type="submit"></button>	
+			</fieldset>
+		</form>
+	</section>
+</div>
+	
+</body>
+</html>
