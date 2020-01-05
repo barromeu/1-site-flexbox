@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#menu {
+	position: absolute;
+	background-color: #444;
+	transition: all 0.2s ease;
+	height: auto;
+	width: 6.5em;
+	top: 48px;
+	left: -300px;
+}
+#menu a	{
+	padding: 20px;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	color: #F1F1F1;
+	top: 50px;
+}
+
+#cChek {
+	display: none;
+}
+#cChek:checked ~ #menu {
+	transform: translateX(300px);
+
+}
+#icon-menu {
+	background-image: url('../imagens/menu-tf.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 25px;
+	position: absolute;
+	z-index: 1;
+}

@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#menu {
+	width: 100%;
+	height: 4em;
+	background-color: #222;
+	display: flex;
+}#menu ul {
+	position: relative;
+	list-style: none;
+}
+#menu ul li {
+	width: 8em;
+	float: left;
+}
+#menu a {
+	padding: 1em;
+	display: block;
+	text-decoration: none;
+	text-align: center;background-color: #222;
+	color: #F1F1F1;
+}
+#menu a:hover {
+	background-color: #F4F4F4;
+	color: #555;
+}
+/* -- ESTILIZANDO A LABEL -- */
+#label-btn {
+padding: 1em;
+color: #FFF;
+font-family: Arial, sans-serif;
+text-align: center;
+font-size: 3em;
+cursor: pointer;
+height: 3em;
+background-color: #020202;
+}
+#btn-menu {
+	display: none;
+}
+/* -- Responsividade do MENU -- */
+@media (max-width: 800px) {
+#btn-meu {	
+	display: block;
+}
+#btn-menu:checked ~ #menu {
+	margin-left: 0;
+}
+#menu {
+	display: flex;
+	margin-top: 2em;
+	margin-left: -100%;
+	transition: all .4s linear;
+	flex-direction: column;
+}
+}
